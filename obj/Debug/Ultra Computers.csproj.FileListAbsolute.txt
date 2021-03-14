@@ -1,0 +1,5 @@
+c:\users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\Ultra Computers.dll
+c:\users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\Ultra Computers.pdb
+c:\users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\obj\Debug\Ultra Computers.csprojResolveAssemblyReference.cache
+c:\users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\obj\Debug\Ultra Computers.dll
+c:\users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\obj\Debug\Ultra Computers.pdb

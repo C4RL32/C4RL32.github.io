@@ -1,0 +1,172 @@
+<p>
+    <label class="custom-radio-checkbox">
+        <!-- Input oculto -->
+        <input class="custom-radio-checkbox__input" type="radio" name="genero" value="mujer" checked>
+        <!-- Imagen en sustitucion -->
+        <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
+        <!-- Texto -->
+        <span class="custom-radio-checkbox__text">Mujer</span>
+    </label>
+</p>
+<p>
+    <label class="custom-radio-checkbox">
+        <!-- Input oculto -->
+        <input class="custom-radio-checkbox__input" type="radio" name="genero" value="hombre">
+        <!-- Imagen en sustitucion -->
+        <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
+        <!-- Texto -->
+        <span class="custom-radio-checkbox__text">Hombre</span>
+    </label>
+</p>
+------------------------------------------------------------------------------------------------------------------
+/* Centra el input personalizado con el texto */
+.custom-radio-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: arial;
+}
+
+/* Modificador para dar la imagen de radio */
+.custom-radio-checkbox__show--radio {
+    background-image: url(radio-uncheck.png);
+}
+
+/* Oculta input original */
+.custom-radio-checkbox > .custom-radio-checkbox__input {
+    display: none;
+}
+
+/* Radio personalizado usando <span> */
+.custom-radio-checkbox > .custom-radio-checkbox__show {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: .5rem;
+    background-size: cover;
+}
+
+/* Cambia el radio personalizado cuando es pulsado */
+.custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--radio {
+    background-image: url(radio-check.png);
+}
+-----------------------------------------------------------------------------------------------------------------------
+<label class="custom-radio-checkbox">
+    <!-- Input oculto -->
+    <input class="custom-radio-checkbox__input" type="checkbox" name="genero" value="hombre">
+    <!-- Imagen en sustitucion -->
+    <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+    <!-- Texto -->
+    <span class="custom-radio-checkbox__text">Acepto las condiciones de uso y privacidad</span>
+</label>
+----------------------------------------------------------------------------------------------------------------------
+/* Centra el input personalizado con el texto */
+.custom-radio-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: arial;
+}
+
+/* Modificador para dar la imagen de checkbox */
+.custom-radio-checkbox__show--checkbox {
+    background-image: url(checkbox-uncheck.png);
+}
+
+/* Oculta input original */
+.custom-radio-checkbox > .custom-radio-checkbox__input {
+    display: none;
+}
+
+/* Radio personalizado usando <span> */
+.custom-radio-checkbox > .custom-radio-checkbox__show {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: .5rem;
+    background-size: cover;
+}
+
+/* Cambia el checkbox personalizado cuando es pulsado */
+.custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--checkbox {
+    background-image: url(checkbox-check.png);
+}
+----------------------------------------------------------------------------------------------------------------------
+!-- Radios -->
+<p>
+    <label class="custom-radio-checkbox">
+        <!-- Input oculto -->
+        <input class="custom-radio-checkbox__input" type="radio" name="genero" value="mujer" checked>
+        <!-- Imagen en sustitucion -->
+        <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
+        <!-- Texto -->
+        <span class="custom-radio-checkbox__text">Mujer</span>
+    </label>
+</p>
+<p>
+    <label class="custom-radio-checkbox">
+        <!-- Input oculto -->
+        <input class="custom-radio-checkbox__input" type="radio" name="genero" value="hombre">
+        <!-- Imagen en sustitucion -->
+        <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
+        <!-- Texto -->
+        <span class="custom-radio-checkbox__text">Hombre</span>
+    </label>
+</p>
+<!-- End Radios -->
+
+<!-- Checkbox -->
+<p>
+    <label class="custom-radio-checkbox">
+        <!-- Input oculto -->
+        <input class="custom-radio-checkbox__input" type="checkbox" name="genero" value="hombre">
+        <!-- Imagen en sustitucion -->
+        <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+        <!-- Texto -->
+        <span class="custom-radio-checkbox__text">Acepto las condiciones de uso y privacidad</span>
+    </label>
+</p>
+<!-- End Checkbox -->
+-----------------------------------------------------------------------------------------------------------------------
+* Centra el input personalizado con el texto */
+.custom-radio-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: arial;
+}
+
+/* Modificador para dar la imagen de checkbox */
+.custom-radio-checkbox__show--checkbox {
+    background-image: url(checkbox-uncheck.png);
+}
+
+/* Modificador para dar la imagen de radio */
+.custom-radio-checkbox__show--radio {
+    background-image: url(radio-uncheck.png);
+}
+
+/* Oculta input original */
+.custom-radio-checkbox > .custom-radio-checkbox__input {
+    display: none;
+}
+
+/* Radio personalizado usando <span> */
+.custom-radio-checkbox > .custom-radio-checkbox__show {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: .5rem;
+    background-size: cover;
+}
+
+/* Cambia el checkbox personalizado cuando es pulsado */
+.custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--checkbox {
+    background-image: url(checkbox-check.png);
+}
+
+/* Cambia el radio personalizado cuando es pulsado */
+.custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--radio {
+    background-image: url(radio-check.png);
+}
+---------------------------------------------------------------------------------------------------------------------------

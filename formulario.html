@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>formulario</title>
+</head>
+<body>
+    <form >
+
+  <fieldset>
+
+    <legend>Datos personales</legend>
+    <p><label>Nombre: <input type="text" name="nombre"></label></p>
+    <p><label>Correo electronico: <input type="text" name="correo"></label></p>
+    <p><label>Localidad de residencia: <input type="text" name="localidad"></label></p>
+    <p><label>Numero telefonico: <input type="text" name="telefono"></label></p>
+    <p><label>Edad: <input type="text" name="edad"></label></p>   
+  </fieldset>
+
+  <fieldset>
+    <legend>Informacion de la solicitud</legend>
+    <p>
+     ¿Que servicio(s) le gustaria solicitar? <br />
+      <label><input type="checkbox" name="limpieza"> Limpieza del equipo</label><br />
+      <label><input type="checkbox" name="software"> Instalacion de software</label><br />
+      <label><input type="checkbox" name="disco"> Cambio de disco duro</label><br />
+      <label><input type="checkbox" name="ram"> Aumento de memoria RAM</label><br />
+      <label><input type="checkbox" name="pasta"> Cambio de pasta termica</label><br />
+      <label><input type="checkbox" name="mejora"> Actualizacion del equipo</label>
+    </p>
+      <p>
+    Tipo de computadora:<br />
+    <label><input type="radio" name="tipoPC" value="escritorio"> Equipo de escritorio</label><br />
+    <label><input type="radio" name="tipoPC" value="laptop"> Equipo portatil (laptop)</label>
+  </p>
+      <p>
+      <label>
+        Descripcion de la solicitud (opcional):<br>
+        <textarea name="mensaje"></textarea>
+      </label>
+    </p>
+  </fieldset>
+  <p>
+    <input type="submit" value="Enviar mensaje">
+    <input type="reset" value="Comenzar de nuevo">
+  </p>
+</form>
+
+</body>
+</html>

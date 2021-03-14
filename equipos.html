@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="iso-8559-1"/>
+    <meta name="description" content="Sitio web dedicado a la venta y distribucion de equipos de computo"/>
+    <meta name="keywords" content="html5, css3, javascript, diseño web"/>
+    <script src="archivo_java.js"></script>
+    <link rel="stylesheet" href="diseño.css"/>
+    <title>Equipos</title>
+</head>
+<body>
+    <header>
+         <img src ="imagenes/logo.png" width="1000" height="350" class="logo" />
+       </header >
+       <nav>
+          <ul class="text1">
+             <li><a href="index.html">Inicio</a></li>
+             <li><a href="servicios.html">Servicios</a></li>
+             <li><a href="equipos.html">Equipos</a></li>
+             <li><a href="conocenos.html">Conocenos</a></li>
+             <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+       </nav>
+     <div class="container">
+            <h1  style=" text-align: center; color:white;">
+                Equipos ensamblados
+            </h1>
+
+            <div class="row">
+                <div class="col s6">
+                    <div class="switch" style="margin: 20px 10px;" onclick="switchPrice()">
+                        
+                    </div>
+                </div>
+              
+            </div>    <div class="row">
+                <div class="col s4">
+                    <div class="card">
+                        <div class="card-content" style="height: 1100px;">
+                            <h4 style="text-align: right; color: #091886;"><span id="basicPrice"></span></h4>
+                            <h3 style="margin: 0px;">
+                                <label>
+                                    <input name="group1" id="basicCard" type="radio" />
+                                    <span style="font-size: xx-large; font-weight: bold; color: black; margin: 0px;">Básico</span>
+                                </label>
+                            </h3>
+                            <span style="font-size: xx-large; font-weight: bold; color: black; margin: 0px;">$9,999.00 MXN</span>
+                            <h5>Procesador: <span style="color: #091886;">Ryzen 3 3200g</span></h5>
+                            <h5>Graficos: <span style="color: #091886;">Radeon Vega 8</span></h5>
+                            <h5>Tarjeta Madre: <span style="color: #091886;">Gigabyte A320M-S2Hk</span></h5>
+                            <h5>Memoria RAM: <span style="color: #091886;">16 gb HyperX FURY Black DDR4 3200MHz</span></h5>
+                            <h5>Almacenamiento: <span style="color: #091886;">SSD Adata SWORDFISH 250GB, PCI Express M.2</span></h5>
+                            <h5>Gabinete: <span style="color: #091886;">Yaguaret Raider RGB</span></h5>
+                            <h5>Fuente de poder: <span style="color: #091886;">GAME FACTOR 400W / 80+ Bronze</span></h5>
+                            <h5>Software: <span style="color: #091886;">Windows 10 y paqueteria de office </span></h5>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <h5><img src="../imagenes/basico.jpg" class="equipos"/></h5>
+                    
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card ">
+                        <div class="card-content" style="height: 1100px;">
+                            <h4 style="text-align: right; color: #091886;"><span id="growthPrice"></span></h4>
+                            <h3 style="margin: 0px;">
+                                <label>
+                                    <input name="group1" id="growthCard" type="radio" />
+                                    <span style="font-size: xx-large; font-weight: bold; color: black; margin: 0px;">Avanzado</span>
+                                </label>
+                            </h3>
+                             <span style="font-size: xx-large; font-weight: bold; color: black; margin: 0px;">$13,999.00 MXN</span>
+                            <h5>Procesador: <span style="color: #28B463  ;">Ryzen 5 3400g</span></h5>
+                            <h5>Graficos: <span style="color: #28B463  ;">Radeon Vega 11</span></h5>
+                            <h5>Tarjeta Madre: <span style="color: #28B463  ;">ASRock microATX A320M-HDV</span></h5>
+                            <h5>Memoria RAM: <span style="color: #28B463  ;">16 gb XPG GAMMIX D10 Red DDR4, 3000MHz</span></h5>
+                            <h5>Almacenamiento: <span style="color: #28B463 ;">SSD XPG Pro 256GB, PCI Express M.2 y 1Tb Seagate Barracuda 3.5'', SATA III </span></h5>
+                            <h5>Gabinete: <span style="color: #28B463  ;">Eagle Warrior FLASH RGB</span></h5>
+                            <h5>Fuente de poder: <span style="color: #28B463  ;">GAME FACTOR 400W / 80+ Bronze</span></h5>
+                            <h5>Software: <span style="color:#28B463  ;">Windows 10 y paqueteria de office </span></h5>
+                            <br />
+                            <br />
+                            <h5><img src="../imagenes/avanzado.png" class="avanzado"/></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s4">
+                    <div class="card ">
+                        <div class="card-content" style="height: 1100px;">
+                            <h4 style="text-align: right; color: #091886;"><span id="proPrice"></span></h4>
+                            <h3 style="margin: 0px;">
+                                <label>
+                                    <input name="group1" id="proCard" type="radio" />
+                                    <span style="font-size: xx-large; font-weight: bold; color: black; ">Profesional</span>
+                                </label>
+                            </h3>
+                            <span style="font-size: xx-large; font-weight: bold; color: black; margin: 0px;">$17,999.00 MXN</span>
+                            <h5>Procesador: <span style="color:#EC2929;">Ryzen 5 2600</span></h5>
+                            <h5>Tarjeta grafica: <span style="color: #EC2929;">GeForce GTX 1650 SC ULTRA, 4GB GDDR6</span></h5>
+                            <h5>Tarjeta Madre: <span style="color: #EC2929;">MSI AMD A320M-A PRO MAX</span></h5>
+                            <h5>Memoria RAM: <span style="color: #EC2929;">16 gb XPG GAMMIX D30 RED DDR4, 3200MHz</span></h5>
+                            <h5>Almacenamiento: <span style="color: #EC2929;">SSD SSD Adata SWORDFISH 3D NAND, 250GB, PCI Express y 1Tb Seagate Barracuda 3.5'', SATA III </span></h5>
+                            <h5>Gabinete: <span style="color: #EC2929;">Aerocool Bolt con Ventana RGB RGB</span></h5>
+                            <h5>Fuente de poder: <span style="color: #EC2929;">Thermaltake LTP- 550W</span></h5>
+                            <h5>Software: <span style="color: #EC2929;">Windows 10 y paqueteria de office </span></h5>
+                            
+                            <h5><img src="../imagenes/profesional.jpg" class="equipos"/></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+      
+            <div class="row" style="margin: 20px 0px;">
+                <div class = "col s8">
+                    <div class="card">
+                        <div class="card-content" style="font-size:large;">
+                            <span class="card-title">Metodo de envio:</span>
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col s6">
+                                        <p>
+                                            <label>
+                                            <input class="with-gap" id="monthPlanButton" name="group2" type="radio"  />
+                                            <span class="">Entrega en persona (<span>Unicamente en puntos de entrega en Tlaxcala,Santa ana y Contla</span>)</span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col s6" style="text-align: right;">
+                                        <span style="text-align: right; text-decoration: line-through;" id="monthPlan"></span>
+                                        <span style="text-align: right; color: #091886; margin-left: 5px;" id="monthPlanDiscount"></span>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col s6" >
+                                        <p>
+                                            <label>
+                                            <input class="with-gap" name="group2" id="annualPlanButton" type="radio"  />
+                                            <span class="">Envio Nacional o local (<span>Mediante un envio por DHL o Fedex y pagando previamente en Mercado pago</span>)</span>
+                                            </label>
+                                        </p>
+                                    </div>
+
+                                    <div class="col s6" style="text-align: right;">
+                                        <div>
+                                            <span style="text-align: right; text-decoration: line-through;" id="annualPlan"></span>
+                                            <span style="text-align: right; color: #091886; margin-left: 5px;" id="annualPlanDiscount"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <div style="text-align: center; margin-bottom: 40px;">
+                <a href="compra-equipos.html" onclick="prepareInfo()">
+                    <button class="btn waves-effect waves-light" type="submit" name="action" value="Submit form" >Proseguir con la compra
+                        <i class="material-icons right">Aceptar</i>
+                    </button>
+                </a>
+            </div>
+
+        </div>
+    <div id="nota"><p>Nota: El gabinete del equipo puede ser cambiado si es que el usuario lo solicita.</p></div>
+
+
+       <footer>
+        <section id="acerca-de">
+            <article>
+                <hgroup><h3>Acerca de</h3></hgroup>
+                <p>Disfruta de todas las opciones que ofrece el sitio web de UltraComputers</p>
+                <p>Encuentra una amplia variedad de articulos y de opciones de acuerdo a tus necesidades.</p>
+            </article>
+        </section>
+          <section id="redes">
+              <div class="Facebook"><a href="https://www.facebook.com/UltraComputersMX"></a></div>
+              <div class="Mercado-Libre"><a href="https://articulo.mercadolibre.com.mx/MLM-853961352-computadora-pc-escritorio-ryzen-3-16-gb-ram-ssd-250-gb-_JM"></a></div>
+          </section>
+      </footer>
+</body>
+</html>
