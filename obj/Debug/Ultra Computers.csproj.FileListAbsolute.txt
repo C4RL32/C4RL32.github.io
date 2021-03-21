@@ -3,3 +3,13 @@ c:\users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\U
 c:\users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\obj\Debug\Ultra Computers.csprojResolveAssemblyReference.cache
 c:\users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\obj\Debug\Ultra Computers.dll
 c:\users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\obj\Debug\Ultra Computers.pdb
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\Microsoft.Data.Edm.dll
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\Microsoft.Data.OData.dll
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\Microsoft.Data.Services.Client.dll
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\Microsoft.Data.Services.dll
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\System.Spatial.dll
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\Microsoft.Data.Edm.xml
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\Microsoft.Data.OData.xml
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\Microsoft.Data.Services.xml
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\Microsoft.Data.Services.Client.xml
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\System.Spatial.xml

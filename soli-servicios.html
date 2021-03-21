@@ -6,7 +6,14 @@
     <meta name="keywords" content="html5, css3, javascript, diseño web"/>
     <script src="archivo_java.js"></script>
     <link rel="stylesheet" href="diseño.css"/>
+    <link rel="icon" href="imagenes/logo.ico" />
     <title>Solicitar un servicio</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("user_OZphJWKY6R0rbqcloRMsX");
+    })();
+</script>
 </head>
 <body>
      <header>
@@ -18,17 +25,16 @@
     </nav>
     <br />
     <section style="width:50%; justify-content:center; display:block;margin:auto; align-items:center; background-image: linear-gradient(to bottom, #17191a, #202122, #292a2b, #323334, #3c3c3d, #454445, #4d4d4e, #565656, #606060, #6b6b6b, #767676, #818181);">
-<form  action="mailto:carlosahs123@gmail.com" method="get" enctype="text/plain">
-
+<div>
   <fieldset>
 
     <legend style="font-weight:600; font-size:25px; color:#83ced1;">Datos personales</legend>
 
-    <p><label style=" font-weight:100; font-size:20px;color:#83ced1;">Nombre: <input type="text" name="nombre" style="color:white;" placeholder="Ingrese su nombre completo" ></label></p>
-    <p><label style=" font-weight:100; font-size:20px;color:#83ced1;">Correo electronico: <input type="email" name="correo" size="40" style="color:white;" placeholder="Ingrese su direccion de correo electronico"></label></p>
-    <p><label style=" font-weight:100; font-size:20px;color:#83ced1;">Localidad de residencia: <input type="text" name="localidad" style="color:white;"placeholder="Ingrese su localidad de residencia en el estado de Tlaxcala"></label></p>
-    <p><label style=" font-weight:100; font-size:20px;color:#83ced1;">Numero telefonico: <input type="text" name="telefono" maxlenght="10" style="color:white;" placeholder="Ingrese su numero de telefono o celular"></label></p>
-    <p><label  style=" font-weight:100; font-size:20px;color:#83ced1;">Edad: <input type="number" name="edad" min="18" max="99" style="color:white;" placeholder="Ingrese su edad"></label></p>   
+    <p><label style=" font-weight:100; font-size:20px;color:#83ced1;">Nombre: <input type="text" id="from_name" name="nombre" style="color:white;" placeholder="Ingrese su nombre completo" /></label></p>
+    <p><label style=" font-weight:100; font-size:20px;color:#83ced1;">Correo electronico: <input type="email" id="from_email" name="correo" size="40" style="color:white;" placeholder="Ingrese su direccion de correo electronico"/></label></p>
+    <p><label style=" font-weight:100; font-size:20px;color:#83ced1;">Localidad de residencia: <input type="text" id="from_localidad" name="localidad" style="color:white;"placeholder="Ingrese su localidad de residencia en el estado de Tlaxcala"/></label></p>
+    <p><label style=" font-weight:100; font-size:20px;color:#83ced1;">Numero telefonico: <input type="text" id="from_tel" name="telefono" style="color:white;" placeholder="Ingrese su numero de telefono o celular"/></label></p>
+    <p><label  style=" font-weight:100; font-size:20px;color:#83ced1;">Edad: <input type="number" id="from_edad" name="edad" min="18" max="99" style="color:white;" placeholder="Ingrese su edad"/></label></p>   
   </fieldset>
 
   <fieldset>
@@ -38,7 +44,7 @@
         <div>
            <label class="custom-radio-checkbox">
     <!-- Input oculto -->
-    <input class="custom-radio-checkbox__input" type="checkbox" name="servicio" value="1">
+    <input class="custom-radio-checkbox__input servicio" type="checkbox" name="servicio" value="limpieza" />
     <!-- Imagen en sustitucion -->
     <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
     <!-- Texto -->
@@ -48,7 +54,7 @@
 
         <div>
            <label class="custom-radio-checkbox">
-    <input class="custom-radio-checkbox__input" type="checkbox" name="servicio" value="2">
+    <input class="custom-radio-checkbox__input servicio" type="checkbox"  name="servicio" value="Instalacion Software"/>
     <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
     <span class="custom-radio-checkbox__text" style="color:#2fb0b6;">Instalacion de Software</span>
                <br />
@@ -56,7 +62,7 @@
 
         <div>
            <label class="custom-radio-checkbox">
-    <input class="custom-radio-checkbox__input" type="checkbox" name="servicio" value="3">
+    <input class="custom-radio-checkbox__input servicio" type="checkbox" name="servicio" value="Cambio de Disco"/>
     <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
     <span class="custom-radio-checkbox__text" style="color:#2fb0b6;">Cambio de disco duro</span>
                <br />
@@ -64,29 +70,29 @@
 
         <div>
            <label class="custom-radio-checkbox">
-    <input class="custom-radio-checkbox__input" type="checkbox" name="servicio" value="4">
+    <input class="custom-radio-checkbox__input servicio" type="checkbox"  name="servicio" value="Aumento memoria RAM"/>
     <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
     <span class="custom-radio-checkbox__text" style="color:#2fb0b6;">Aumento de memoria RAM</span>
                <br />
             </div>
 
         <div>
-           <label class="custom-radio-checkbox">
-    <input class="custom-radio-checkbox__input" type="checkbox" name="servicio" value="5">
+           <label class="custom-radio-checkbox ">
+    <input class="custom-radio-checkbox__input servicio" type="checkbox"  name="servicio" value="Pasta Termica"/>
     <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
     <span class="custom-radio-checkbox__text" style="color:#2fb0b6;">Cambio de Pasta termica</span>
                <br />
             </div>
 
         <div>
-           <label class="custom-radio-checkbox">
-    <input class="custom-radio-checkbox__input" type="checkbox" name="servicio" value="limpieza/z">
+           <label class="custom-radio-checkbox ">
+    <input class="custom-radio-checkbox__input servicio" type="checkbox"  name="servicio" value="Actualizacion equipo"/>
     <span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
     <span class="custom-radio-checkbox__text" style="color:#2fb0b6;">Actualizacion del equipo</span>
                <br />
             </div>
 
-
+        
     </p>
       <p style=" font-weight:100; font-size:20px;color:#83ced1;">
     Tipo de computadora:<br />
@@ -94,7 +100,7 @@
    <p>
     <label class="custom-radio-checkbox">
         <!-- Input oculto -->
-        <input class="custom-radio-checkbox__input" type="radio" name="tipoPC" value="escritorio" checked>
+        <input class="custom-radio-checkbox__input tipo" type="radio" name="tipoPC"  value="escritorio" checked="checked"/>
         <!-- Imagen en sustitucion -->
         <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
         <!-- Texto -->
@@ -103,7 +109,7 @@
 <p>
     <label class="custom-radio-checkbox">
         <!-- Input oculto -->
-        <input class="custom-radio-checkbox__input" type="radio" name="tipoPC" value="laptop">
+        <input class="custom-radio-checkbox__input tipo" type="radio" name="tipoPC"  value="laptop"/>
         <!-- Imagen en sustitucion -->
         <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
         <!-- Texto -->
@@ -112,16 +118,15 @@
 </p>
       <p>
       <label style=" font-weight:100; font-size:20px;color:#83ced1;">
-        Descripcion de la solicitud (opcional):<br>
-        <textarea name="mensaje" style="border-color:#83ced1;color: white; font-size:20px;" placeholder="Añada detalles que necesite agregar a su solicitud"></textarea>
+        Descripcion de la solicitud (opcional):<br/>
+        <textarea id="from_text" name="mensaje" style="border-color:#83ced1;color: white; font-size:20px;" placeholder="Añada detalles que necesite agregar a su solicitud"></textarea>
       </label>
     </p>
   </fieldset>
   <p style="display:flex;">
-    <input type="submit" value="Send" style="text-align:center; text-decoration:none; width:50%; font-weight:600; font-size:25px; color:#83ced1; padding-top:15px; padding-bottom:15px; padding-left:15px; padding-right: 15px; background-color:#494949;" />
-    <input type="reset" value="Reiniciar el formulario" style="text-align:center; text-decoration:none;width:50%; font-weight:600; font-size:25px; color:#83ced1; padding-top:15px; padding-bottom:15px; padding-left:15px; padding-right: 15px; background-color:#494949;" />
-  </p>
-</form>
+    <button value="enviar" onclick="sendMail()" style="text-align:center;cursor:pointer; text-decoration:none; width:100%; font-weight:600; font-size:25px; color:#83ced1; padding-top:15px; padding-bottom:15px; padding-left:15px; padding-right: 15px; background-color:#494949;" >Enviar</button>
+   </p>
+</div>
         </section>
 </body>
 </html>

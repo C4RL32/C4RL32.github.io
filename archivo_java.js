@@ -1,53 +1,72 @@
 ﻿// javascript documento
 
-// Product Constructor
-export class Product {
-    constructor(nombre, correo ,usuario, price, year) {
-        this.cliente = nombre;
-        this.correo = correo;
-        this.modelo = usuario;
-        this.price = price;
-        this.year = year;
+function sendMail() {
+    var servicios = document.getElementsByClassName("servicio");
+    var serviciosdatos = "";
+    
+ 
+    for (var i = 0; i < servicios.length; i++) {
+        if (servicios[i].checked) {
+            serviciosdatos += servicios[i].value + ", "
+        }
     }
+
+
+    var tipoPCradio = document.getElementsByClassName("tipo");
+    var tipodatos = tipoPCradio[0].checked ? tipoPCradio[0].value : tipoPCradio[1].value;
+
+
+    var tempParams = {
+        from_name: document.getElementById("from_name").value,
+        from_email: document.getElementById("from_email").value,
+        from_localidad: document.getElementById("from_localidad").value,
+        from_tel: document.getElementById("from_tel").value,
+        from_edad: document.getElementById("from_edad").value,
+        from_servicio: serviciosdatos,
+        from_pc: tipodatos,
+        from_text: document.getElementById("from_text").value,
+    };
+
+    emailjs.send('service_28zg6gp', 'template_s1br0kj', tempParams)
+    .then(function(res){
+        console.log("succes", res.status);
+        alert("Solicitud enviada");
+        window.history.back();
+    })
 }
 
-import { Product } from "./Product.js";
-import { UI } from "./UI.js";
+function guardarEquipos() {
+    var equipos = document.getElementsByClassName("equiposRadio");
+    var seleccion = equipos[0].checked ? equipos[0].value : equipos[1].checked ? equipos[1].value : equipos[2].value;
+    window.localStorage.setItem("equipoSeleccionado", seleccion);
+}
 
-// DOM Events
-document
-  .getElementById("product-form")
-  .addEventListener("submit", function (e) {
-      // Override the default Form behaviour
-      e.preventDefault();
 
-      // Getting Form Values
-    const cliente = document.getElementById("cliente").value,
-    correo = document.getElementById("correo").value,
-      name = document.getElementById("modelo").value,    
-      price = document.getElementById("price").value,
-      year = document.getElementById("year").value;
-      
+function sendMailCompra() {
+    var equipos = document.getElementsByClassName("equipoRadio");
+    var seleccionEquipo = equipos[0].checked ? equipos[0].value : equipos[1].checked ? equipos[1].value : equipos[2].value;
 
-      // Create a new Oject Product
-    const product = new Product(cliente, correo, name, price, year);
+    var pagoRadio= document.getElementsByClassName("pagoRadio");
+    var tipoPago = pagoRadio[0].checked ? pagoRadio[0].value : pagoRadio[1].value;
 
-      // Create a new UI instance
-    const ui = new UI();
 
-      // Input User Validation
-      if (cliente ==="" || correo ==="" || name === "" || price === "" || year === "") {
-          ui.showMessage("Please Insert data in all fields", "danger");
-      }
+    var tempParams = {
+        from_name: document.getElementById("from_name").value,
+        from_email: document.getElementById("from_email").value,
+        from_localidad: document.getElementById("from_localidad").value,
+        from_tel: document.getElementById("from_tel").value,
+        from_edad: document.getElementById("from_edad").value,
+        from_equipo: seleccionEquipo,
+        from_pago: tipoPago,
+        from_text: document.getElementById("from_text").value,
+    };
 
-      // Save Product
-      ui.addProduct(product);
-      ui.showMessage("Product Added Successfully", "success");
-      ui.resetForm();
-  });
+    console.log(tempParams)
+    emailjs.send('service_28zg6gp', 'template_eruut2e', tempParams)
+    .then(function (res) {
+        console.log("succes", res.status);
+        alert("Pedido enviado");
+        window.history.back();
+    })
+}
 
-document.getElementById("product-list").addEventListener("click", (e) => {
-    const ui = new UI();
-ui.deleteProduct(e.target);
-e.preventDefault();
-});

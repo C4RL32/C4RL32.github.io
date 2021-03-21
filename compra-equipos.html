@@ -6,6 +6,13 @@
     <meta name="keywords" content="html5, css3, javascript, diseño web"/>
     <script src="archivo_java.js"></script>
     <link rel="stylesheet" href="diseño.css"/>
+    <link rel="icon" href="imagenes/logo.ico" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("user_OZphJWKY6R0rbqcloRMsX");
+    })();
+</script>
     <title>Compra de Equipos</title>
 </head>
 <body>
@@ -18,17 +25,17 @@
     </nav>
     <br />
     <section style="width:50%; justify-content:center; display:block;margin:auto; align-items:center; background-image: linear-gradient(to bottom, #17191a, #202122, #292a2b, #323334, #3c3c3d, #454445, #4d4d4e, #565656, #606060, #6b6b6b, #767676, #818181);">
-<form>
+<div>
 
   <fieldset>
 
     <legend style="font-weight:600; font-size:25px; color:#83ced1;">Datos personales</legend>
 
-    <p><label style=" font-weight:100; font-size:20px;color:#83ced1;">Nombre: <input type="text" name="nombre" style="color:white;" placeholder="Ingrese su nombre completo" ></label></p>
-    <p><label style=" font-weight:100; font-size:20px;color:#83ced1;">Correo electronico: <input type="email" name="correo" size="40" style="color:white;" placeholder="Ingrese su direccion de correo electronico"></label></p>
-    <p><label style=" font-weight:100; font-size:20px;color:#83ced1;">Localidad de residencia: <input type="text" name="localidad" style="color:white;"placeholder="Ingrese su localidad de residencia en el estado de Tlaxcala"></label></p>
-    <p><label style=" font-weight:100; font-size:20px;color:#83ced1;">Numero telefonico: <input type="text" name="telefono" maxlenght="10" style="color:white;" placeholder="Ingrese su numero de telefono o celular"></label></p>
-    <p><label  style=" font-weight:100; font-size:20px;color:#83ced1;">Edad: <input type="number" name="edad" min="18" max="99" style="color:white;" placeholder="Ingrese su edad" ></label></p>   
+    <p><label style=" font-weight:100; font-size:20px;color:#83ced1;">Nombre: <input type="text" id="from_name" name="nombre" style="color:white;" placeholder="Ingrese su nombre completo" ></label></p>
+    <p><label style=" font-weight:100; font-size:20px;color:#83ced1;">Correo electronico: <input type="email" id="from_email" name="correo" size="40" style="color:white;" placeholder="Ingrese su direccion de correo electronico"></label></p>
+    <p><label style=" font-weight:100; font-size:20px;color:#83ced1;">Localidad de residencia: <input type="text" id="from_localidad" name="localidad" style="color:white;"placeholder="Ingrese su localidad de residencia en el estado de Tlaxcala"></label></p>
+    <p><label style=" font-weight:100; font-size:20px;color:#83ced1;">Numero telefonico: <input type="text" name="telefono" id="from_tel"style="color:white;" placeholder="Ingrese su numero de telefono o celular"></label></p>
+    <p><label  style=" font-weight:100; font-size:20px;color:#83ced1;">Edad: <input type="number" name="edad" min="18" max="99" id="from_edad" style="color:white;" placeholder="Ingrese su edad" ></label></p>   
   </fieldset>
 
   <fieldset>
@@ -40,22 +47,22 @@
    <p>
     <label class="custom-radio-checkbox">
         <!-- Input oculto -->
-        <input class="custom-radio-checkbox__input" type="radio" name="equipo" value="1"  checked/>
+        <input class="custom-radio-checkbox__input equipoRadio" type="radio" name="equipo" value="basico"  checked="checked"/>
         <!-- Imagen en sustitucion -->
-        <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
+        <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"/></span>
         <!-- Texto -->
-        <span class="custom-radio-checkbox__text" style="color:#2fb0b6;">Basico</span>
+        <span class="custom-radio-checkbox__text" style="color:#2fb0b6;"/>Basico</span>
     </label>
 <p>
     <label class="custom-radio-checkbox">
-        <input class="custom-radio-checkbox__input" type="radio" name="equipo" value="2">
+        <input class="custom-radio-checkbox__input equipoRadio" type="radio" name="equipo" value="avanzado"/>
         <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
         <span class="custom-radio-checkbox__text" style="color:#2fb0b6;">Avanzado</span>
     </label>
 </p>
 <p>
     <label class="custom-radio-checkbox">
-        <input class="custom-radio-checkbox__input" type="radio" name="equipo" value="3">
+        <input class="custom-radio-checkbox__input equipoRadio" type="radio" name="equipo" value="profesional"/>
         <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
         <span class="custom-radio-checkbox__text" style="color:#2fb0b6;">Profesional</span>
     </label>
@@ -66,13 +73,13 @@
          </p>
    <p>
     <label class="custom-radio-checkbox">
-        <input class="custom-radio-checkbox__input" type="radio" name="pago" value="efectivo"  checked/>
+        <input class="custom-radio-checkbox__input pagoRadio" type="radio" name="pago" value="efectivo"  checked="checked"/>
         <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
         <span class="custom-radio-checkbox__text" style="color:#2fb0b6;">Efectivo</span>
     </label>
 <p>
     <label class="custom-radio-checkbox">
-        <input class="custom-radio-checkbox__input" type="radio" name="pago" value="trajeta">
+        <input class="custom-radio-checkbox__input pagoRadio" type="radio" name="pago" value="trajeta"/>
         <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
         <span class="custom-radio-checkbox__text" style="color:#2fb0b6;">Tarjeta o transefrencia (Mercado Pago)</span>
     </label>
@@ -81,15 +88,14 @@
       <p>
       <label style=" font-weight:100; font-size:20px;color:#83ced1;">
        Añada detalles que necesite en su equipo adquirido (opcional):<br>
-        <textarea name="detalles" style="border-color:#83ced1; font-size:20px; color:white;" placeholder="Si desea cambiar el gabinete de su equipo especifiquelo aqui"></textarea>
+        <textarea name="detalles" id="from_text" style="border-color:#83ced1; font-size:20px; color:white;" placeholder="Si desea cambiar el gabinete de su equipo especifiquelo aqui"></textarea>
       </label>
     </p>
   </fieldset>
   <p style="display:flex;">
-    <input type="submit" value="Enviar solicitud" style="text-align:center; text-decoration:none; width:50%; font-weight:600; font-size:25px; color:#83ced1; padding-top:15px; padding-bottom:15px; padding-left:15px; padding-right: 15px; background-color:#494949;" />
-    <input type="reset" value="Reiniciar el formulario" style="text-align:center; text-decoration:none;width:50%; font-weight:600; font-size:25px; color:#83ced1; padding-top:15px; padding-bottom:15px; padding-left:15px; padding-right: 15px; background-color:#494949;" />
-  </p>
-</form>
+    <button onclick="sendMailCompra()" style="text-align:center;cursor:pointer; text-decoration:none; width:100%; font-weight:600; font-size:25px; color:#83ced1; padding-top:15px; padding-bottom:15px; padding-left:15px; padding-right: 15px; background-color:#494949;" >Enviar</button>
+    </p>
+</div>
         </section>
 </body>
 </html>
