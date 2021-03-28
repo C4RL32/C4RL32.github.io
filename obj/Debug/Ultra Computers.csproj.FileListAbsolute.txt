@@ -13,3 +13,13 @@ C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\U
 C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\Microsoft.Data.Services.xml
 C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\Microsoft.Data.Services.Client.xml
 C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\System.Spatial.xml
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\EntityFramework.dll
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\Newtonsoft.Json.dll
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\System.Net.Http.Formatting.dll
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\System.Web.Http.dll
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\System.Web.Http.WebHost.dll
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\EntityFramework.xml
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\Newtonsoft.Json.xml
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\System.Net.Http.Formatting.xml
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\System.Web.Http.xml
+C:\Users\beto_\onedrive\documentos\visual studio 2012\Projects\Ultra Computers\Ultra Computers\bin\System.Web.Http.WebHost.xml
